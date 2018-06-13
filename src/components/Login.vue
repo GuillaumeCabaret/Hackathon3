@@ -2,16 +2,16 @@
  <div class ="carré">
     <div class="logo">
     <img class="logo" src="src/assets/LOGO-Will.png" alt="logo">
-    <input type="text" placeholder="Nom d'utilisateur" />
     </div>
     <div class="login">
-      <img class="login" src="src/assets/login.png" alt="">
-      <input type="text" placeholder="Mot de passe" />    
-    </div>
-
-    <div class="mdp">
-      <img class="mdp" src="src/assets/mdp.png" alt="password">       
-    </div>
+  <form>
+    <img class="logo_login" src="src/assets/login.png">  
+    <input type="text" name="u" placeholder="Username" required="required" />
+    <img class="logo_mdp" src="src/assets/mdp.png">  
+    <input type="password" name="p" placeholder="Password" required="required" />
+    <router-link to="/menu" tag="button">login</router-link>
+    </form>
+</div>
   </div>
 </template>
 
@@ -36,16 +36,48 @@ export default {
   margin-top: 60%;
   width: 360px;
   height: 360px;
-  background: antiquewhite;
+  background: white;
   border-radius: 70%;
 }
 .login {
-  margin-left: 3%;
+  margin-left: 15%;
   width: 35%;
 }
-.mdp {
-  padding-top: 2%;
-  margin-left: 3%;
-  width: 35%;
+
+.login form {
+  width: 75%;
+}
+input {
+  border: 1px solid #8f8be6;
+  border-radius: 18px 18px 18px 18px;
+  color: black;
+  font-size: 15px;
+  outline: medium none;
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #8f8be6;
+  border: 1px solid #8f8be6;
+  border-bottom: 1px solid #8f8be6;
+  border-radius: 18px 18px 18px 18px;
+  box-shadow: 0 1px 0 #e6f5ff inset;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  padding: 10px 25px;
+  width: 150px;
+  margin-left: 54%;
+  margin-top: -10%;
+}
+.logo_login {
+  width: 30%;
+  float: left;
+}
+.logo_mdp {
+  width: 30%;
+  float: left;
 }
 </style>
