@@ -1,5 +1,13 @@
 <template>
-<h1>Vehicules</h1>
+<div>
+<h1>Mes véhicules</h1>
+<div class="refCar">
+<p>Marque: </p>
+<p>Couleur: </p>
+<p>Plaque: </p>
+<p>Pneumatqiues :</p>
+</div>
+</div>
 </template>
 
 <script>
@@ -15,4 +23,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.refCar {
+  font-weight: bold;
+  float: left;
+}
 </style>
