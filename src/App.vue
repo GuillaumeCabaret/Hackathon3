@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logowhite.png" class="logo">
+
     <router-view/>
   </div>
 </template>
@@ -24,10 +24,5 @@ export default {
 body {
   background-color :#8F8BE6;
 }
-.logo {
-  float: left;
-  width: 30%;
-  padding-bottom: 10px;
 
-}
 </style>
