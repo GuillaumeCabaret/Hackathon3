@@ -1,5 +1,5 @@
 <template>
-
+<h1>Command</h1>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-
+  <h1>Cgu</h1>
 </template>
 
 <script>
