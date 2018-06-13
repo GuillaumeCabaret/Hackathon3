@@ -1,28 +1,30 @@
 <template>
 <div>
-    <img src="../assets/logowhite.png" class="logo">
-  <nav class="menu">
-  <ul>
-    <li class="menu-his">
-      <a class="fa fa-facebook" href="#/historique" target="_blank">{{ his }}</a>
-    </li>
-    <li class="menu-voit">
-      <a class="fa fa-google" href="#/vehicules" target="_blank">{{voit}}</a>
-    </li>
-    <li class="menu-willer">
-      <a class="fa fa-dribbble" href="#/command" target="_blank">{{willer}}</a>
-    </li>
-    <li class="menu-profil">
-      <a class="fa fa-codepen" href="#/user" target="_blank">{{profil}}</a>
-    </li>
-    <li class="menu-cgu">
-      <a class="fa fa-linkedin" href="#/cgu" target="_blank">{{cgu}}</a>
-    </li>
-    <li class="menu-cr">
-      <a class="fa fa-github" href="#/resume" target="_blank">{{cr}}</a>
-    </li>
-  </ul>
-  </nav>
+<h1>Menu</h1>
+<img src="../assets/logowhite.png" class="logo">
+
+ <div class="circle-menu">
+    <ul>
+        <li>
+            <a class="cgu" href="#">CGU</a>
+        </li>
+        <li>
+            <a class="compte_rendu" href="#">Compte rendu</a>
+        </li>
+        <li>
+            <a class="historique" href="#">Historique</a>
+        </li>
+        <li>
+            <a class="mes_voitures" href="#">Mes Voitures</a>
+        </li>
+        <li>
+            <a class="commander" href="#">Commander</a>
+        </li>
+        <li>
+            <a class="profil" href="#">Profil</a>
+        </li>
+    </ul>
+</div>
 </div>
 </template>
 
@@ -45,105 +47,104 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-a {
-  text-decoration: none;
-  color: white;
-}
-.menu {
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: blue;
-  list-style-type: none;
-  position: absolute;
-}
-.menu-his {
-  list-style-type: none;
-  position: absolute;
-  top: -5vh;
-  right: 10vh;
-  border: solid 1px;
-  border-radius: 50%;
-  width: 10vh;
-  height: 10vh;
-  line-height: 85px;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  color: white;
-  background: rgba(255, 255, 255, 0.3);
-}
-.menu-voit {
-  list-style-type: none;
-  position: absolute;
-  top: -25vh;
-  left: -10vh;
-  border: solid 1px;
-  border-radius: 50%;
-  width: 10vh;
-  height: 10vh;
-  line-height: 85px;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  color: white;
-  background: rgba(255, 255, 255, 0.3);
-}
-.menu-willer {
-  list-style-type: none;
-  position: absolute;
-  top: -25vh;
-  left: 5vh;
-  border: solid 1px;
-  border-radius: 50%;
-  width: 10vh;
-  height: 10vh;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  color: white;
-  background: rgba(255, 255, 255, 0.3);
-}
-.menu-profil {
-  list-style-type: none;
-  position: absolute;
-  top: -5vh;
-  left: 10vh;
-  border: solid 1px;
-  border-radius: 50%;
-  width: 10vh;
-  height: 10vh;
-  line-height: 85px;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  color: white;
-  background: rgba(255, 255, 255, 0.3);
-}
-.menu-cgu {
-  list-style-type: none;
-  position: absolute;
-  bottom: -25vh;
-  left: 5vh;
-  border: solid 1px;
-  border-radius: 50%;
-  width: 10vh;
-  height: 10vh;
-  line-height: 85px;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  color: white;
-  background: rgba(255, 255, 255, 0.3);
-}
-.menu-cr {
-  list-style-type: none;
-  position: absolute;
-  bottom: -25vh;
-  left: -10vh;
-  border: solid 1px;
-  border-radius: 50%;
-  width: 10vh;
-  height: 10vh;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  color: white;
-  background: rgba(255, 255, 255, 0.3);
-}
 .logo {
   float: left;
   width: 30%;
-  margin-top: -6vh
+  margin-top: -12vh;
+}
+
+.circle-menu li {
+  list-style: none;
+  display: inline;
+}
+
+.circle-menu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin: 20em auto 7em;
+}
+
+.circle-menu a {
+  font-weight: bolder;
+  font-size: 11px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8em;
+  height: 8em;
+  line-height: 8em;
+  margin: -4em;
+  -moz-border-radius: 4em;
+  -webkit-border-radius: 4em;
+  border-radius: 4em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+.circle-menu a.cgu {
+  background: white;
+}
+
+.circle-menu a.compte_rendu {
+  background: white;
+}
+
+.circle-menu a.historique {
+  background: white;
+}
+
+.circle-menu a.mes_voitures {
+  background: white;
+}
+
+.circle-menu a.commander {
+  background: white;
+}
+
+.circle-menu a.profil {
+  background: white;
+}
+
+/* 360/7= 60 roughly so for 7 elements rotate the element every 60deg. 12em translate is half the container */
+
+.circle-menu .cgu {
+  transform: rotate(60deg) translate(12em) rotate(-60deg);
+  -webkit-transform: rotate(60deg) translate(12em) rotate(-60deg);
+  -ms-transform: rotate(60deg) translate(12em) rotate(-60deg);
+}
+
+.circle-menu .compte_rendu {
+  transform: rotate(120deg) translate(12em) rotate(-120deg);
+  -webkit-transform: rotate(120deg) translate(12em) rotate(-120deg);
+  -ms-transform: rotate(120deg) translate(12em) rotate(-120deg);
+}
+
+.circle-menu .historique {
+  transform: rotate(180deg) translate(12em) rotate(-180deg);
+  -webkit-transform: rotate(180deg) translate(12em) rotate(-180deg);
+  -ms-transform: rotate(180deg) translate(12em) rotate(-180deg);
+}
+
+.circle-menu .mes_voitures {
+  transform: rotate(240deg) translate(12em) rotate(-240deg);
+  -webkit-transform: rotate(240deg) translate(12em) rotate(-240deg);
+  -ms-transform: rotate(240deg) translate(12em) rotate(-240deg);
+}
+
+.circle-menu .commander {
+  transform: rotate(300deg) translate(12em) rotate(-300deg);
+  -webkit-transform: rotate(300deg) translate(12em) rotate(-300deg);
+  -ms-transform: rotate(300deg) translate(12em) rotate(-300eg);
+}
+
+.circle-menu .profil {
+  transform: rotate(360deg) translate(12em) rotate(-360deg);
+  -webkit-transform: rotate(360deg) translate(12em) rotate(-360deg);
+  -ms-transform: rotate(360deg) translate(12em) rotate(-360deg);
 }
 </style>
