@@ -1,5 +1,7 @@
 <template>
-<nav class="menu">
+<div>
+    <img src="../assets/logowhite.png" class="logo">
+  <nav class="menu">
   <ul>
     <li class="menu-his">
       <a class="fa fa-facebook" href="#/historique" target="_blank">{{ his }}</a>
@@ -20,7 +22,8 @@
       <a class="fa fa-github" href="#/resume" target="_blank">{{cr}}</a>
     </li>
   </ul>
-</nav>
+  </nav>
+</div>
 </template>
 
 <script>
@@ -137,5 +140,10 @@ a {
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
   color: white;
   background: rgba(255, 255, 255, 0.3);
+}
+.logo {
+  float: left;
+  width: 30%;
+  margin-top: -6vh
 }
 </style>
