@@ -36,7 +36,6 @@ export default {
 <style scoped>
 p {
   font-size: 21px;
-
 }
 .logo {
   float: left;
@@ -79,7 +78,7 @@ h1 {
   height: 35vh;
   position: relative;
   top: 19vh;
-  left: -7vh;
+  left: -7.5vh;
 }
 
 .Roundright {
@@ -106,7 +105,7 @@ h1 {
 
 .Roundleft {
   transform: rotate(128deg) translate(-26em) rotate(-127deg);
--webkit-transform: rotate(128deg) translate(-26em) rotate(-127deg);
+  -webkit-transform: rotate(128deg) translate(-26em) rotate(-127deg);
   -ms-transform: rotate(128deg) translate(-26em) rotate(-127deg);
   height: 9vh;
   width: 9vh;
