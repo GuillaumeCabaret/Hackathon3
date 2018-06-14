@@ -50,7 +50,7 @@ export default {
 .logo {
   float: left;
   width: 30%;
-  margin-top: -12vh;
+  margin-top: -11vh;
 }
 
 .circle-menu li {
