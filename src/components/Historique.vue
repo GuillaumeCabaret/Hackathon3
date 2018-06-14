@@ -142,7 +142,7 @@ body {
   width: 84%;
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 48%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -330,13 +330,11 @@ h2{
 div.message {
   position: relative;
   padding: 10px;
-  padding-left: 35px;
   margin: 30px 10px;
   box-shadow:0 2px 5px rgba(0,0,0,.3);
   background: white;
   color: #8F8BE6;
-  margin-top: 62vh;
-  
+  margin-top: 65vh;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
