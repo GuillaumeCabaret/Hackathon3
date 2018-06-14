@@ -6,22 +6,22 @@
  <div class="circle-menu">
     <ul>
         <li>
-            <a class="cgu" href="#">CGU</a>
+            <a class="cgu" href="#/cgu">CGU</a>
         </li>
         <li>
-            <a class="compte_rendu" href="#">Compte rendu</a>
+            <a class="compte_rendu" href="#/resume">Compte rendu</a>
         </li>
         <li>
-            <a class="historique" href="#">Historique</a>
+            <a class="historique" href="#/historique">Historique</a>
         </li>
         <li>
-            <a class="mes_voitures" href="#">Mes Voitures</a>
+            <a class="mes_voitures" href="#/vehicules">Mes Voitures</a>
         </li>
         <li>
-            <a class="commander" href="#">Commander</a>
+            <a class="commander" href="#/command">Commander</a>
         </li>
         <li>
-            <a class="profil" href="#">Profil</a>
+            <a class="profil" href="#/user">Profil</a>
         </li>
     </ul>
 </div>
