@@ -7,22 +7,22 @@
  <div class="circle-menu">
     <ul>
         <li>
-            <a class="cgu" href="#/cgu">CGU</a>
+            <a id="one" class="cgu" href="#/cgu">CGU</a>
         </li>
         <li>
-            <a class="compte_rendu" href="#/resume">Compte rendu</a>
+            <a id="two" class="compte_rendu" href="#/resume">Compte rendu</a>
         </li>
         <li>
-            <a class="historique" href="#/historique">Historique</a>
+            <a id="one" class="historique" href="#/historique">Historique</a>
         </li>
         <li>
-            <a class="mes_voitures" href="#/vehicules">Mes Voitures</a>
+            <a id="one" class="mes_voitures" href="#/vehicules">Mes Voitures</a>
         </li>
         <li>
-            <a class="commander" href="#/command">Commander</a>
+            <a id="one" class="commander" href="#/command">Commander</a>
         </li>
         <li>
-            <a class="profil" href="#/user">Profil</a>
+            <a id="one" class="profil" href="#/user">Profil</a>
         </li>
     </ul>
 </div>
@@ -54,6 +54,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#one {
+  line-height: 6em;
+}
+
+#two {
+  line-height: 3em;
+}
 .logo {
   float: left;
   width: 30%;
@@ -70,19 +77,18 @@ export default {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  margin: 20em auto 7em;
+  margin: 18em auto 7em;
 }
 
 .circle-menu a {
   font-weight: bolder;
-  font-size: 11px;
+  font-size: 12px;
   display: block;
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 8em;
-  height: 8em;
-  line-height: 8em;
+  left: 53%;
+  width: 6em;
+  height: 6em;
   margin: -4em;
   -moz-border-radius: 4em;
   -webkit-border-radius: 4em;
@@ -157,7 +163,7 @@ export default {
 
 /* Message information */
 
-h2{
+h2 {
   font-weight: 100;
   font-size: 30pt;
   line-height: 1.3em;
@@ -168,43 +174,43 @@ div.message {
   position: relative;
   padding: 10px;
   margin: 30px 10px;
-  box-shadow:0 2px 5px rgba(0,0,0,.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   background: white;
-  color: #8F8BE6;
+  color: #8f8be6;
   margin-top: 65vh;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-div.message:hover{
-  box-shadow: 0 15px 20px rgba(10,0,10,.3);
+div.message:hover {
+  box-shadow: 0 15px 20px rgba(10, 0, 10, 0.3);
 }
 
-div.message:before{
-  content: '';
+div.message:before {
+  content: "";
   font-family: FontAwesome;
   position: absolute;
   display: block;
   top: -21px;
   left: 50%;
-  margin:0 -21px;
+  margin: 0 -21px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   width: 24px;
-  padding:10px;
+  padding: 10px;
   background: inherit;
-  box-shadow:0 5px 10px rgba(0,0,0,.25);
-  color: rgba(255,255,255,.75);
-  border-radius:50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
   border: 2px solid transparent;
   z-index: 2;
 }
 
-div.message.information:before{
-  content:'\f129';
+div.message.information:before {
+  content: "\f129";
   color: black;
 }
 
@@ -212,7 +218,7 @@ div.message.information:before{
   float: right;
   margin-top: -7vh;
   margin-left: 34vh;
-  background-color: #8F8BE6;
+  background-color: #8f8be6;
   border-radius: 50%;
   border: transparent;
   width: 8vh;
