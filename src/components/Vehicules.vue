@@ -38,18 +38,17 @@
           <option v-for="(color, index ) of colors" :key="index">{{ color.colorName }}</option>
         </select>
       </p>
-      <!-- <p>Immatriculation:
-        <select v-model="selectedImmat">
-          <option v-for="(brand, index ) of brands" :key="index">{{ brand.brandName }}</option>
-        </select>
+      <p>Immatriculation:
+        <input type="text" class='immat'>
       </p>
+       <hr>
+    </div>
 
-      <p> -->
-    </div>
-    <div class="separate">
-      <hr>
-    </div>
+
+
+
   </div>
+
 </template>
 
 
@@ -179,9 +178,7 @@ export default {
   margin-bottom: 2vh;
   color: #fff;
 }
-.separate {
-  color: #fff;
-}
+
 .logo {
   float: left;
   width: 30%;
