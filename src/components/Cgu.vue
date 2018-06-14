@@ -50,6 +50,9 @@ Les liens hypertextes mis en oeuvre au sein du présent site Internet, en direct
 De même que la société Will  ne pourra en aucune façon être tenue pour responsable des sites ayant un lien hypertexte avec le présent site et décline toute responsabilité quant à leur contenu et à leur utilisation.
 </p>
     </div>
+    <div>
+      <router-link to="/menu" tag="button">Menu</router-link>
+    </div>
 </div>
 </template>
 

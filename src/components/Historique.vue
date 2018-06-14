@@ -79,8 +79,8 @@
 </div>
 <div>
   <div class="information message">
-  <h2>Information</h2>
-	<p>Perte d’adhérence</p>
+  <h2>6 %</h2>
+	<p>Est le nombre d'accident mortel sur la route</p>
 </div>
 </div>
 </div>
@@ -318,7 +318,7 @@ body {
   margin-left: -5vh;
 }
 
-
+/* Message information */
 h2{
   font-weight: 100;
   font-size: 30pt;
