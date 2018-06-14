@@ -18,10 +18,23 @@ export default {
   name: "User",
   data() {
     return {
-      msg: "User"
+       posts: [],
+      errors: []
     };
-  }
-};
+  },
+ created() {
+    axios.get(`https://fipa201gt4.execute-api.eu-central-1.amazonaws.com/dev/
+`)
+    .then(response => {
+      // JSON responses are automatically parsed.
+      this.posts = response.data
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
+},
+}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
