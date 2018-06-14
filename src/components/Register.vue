@@ -9,7 +9,7 @@
     <input type="text" name="u" placeholder="Saisissez un nom d'utilisateur" required="required" />
     <img class="logo_mdp" src="src/assets/mdp.png">  
     <input type="password" name="p" placeholder="Saisissez un mot de passe" required="required" />
-    <router-link to="/login" tag="button">S'enregistrer</router-link>
+    <router-link to="/menu" tag="button">S'enregistrer</router-link>
     </form>
 </div>
   </div>
