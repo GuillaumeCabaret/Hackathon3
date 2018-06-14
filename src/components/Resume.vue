@@ -68,10 +68,10 @@ h1 {
 }
 
 .voiture {
-  height: 30vh;
+  height: 35vh;
   position: relative;
-  top: 15vh;
-  left: -5vh;
+  top: 19vh;
+  left: -7vh;
 }
 
 .Roundright {
