@@ -7,6 +7,7 @@
     <h2>Mais pas de panique, Will est la solution afin que le nécessaire sois fait pour votre sécurité ! </h2>
 </div>
     <router-link to="/login" tag="button">Se connecter </router-link>
+    <router-link to="/Register" tag="button">S'enregistrer </router-link>
 </div>
 </template>
 
