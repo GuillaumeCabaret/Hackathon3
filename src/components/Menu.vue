@@ -1,8 +1,9 @@
 <template>
 <div>
-<h1>Menu</h1>
-<img src="../assets/logowhite.png" class="logo">
+<h1>Menu </h1>
+<router-link class="logout" to="/" tag="button"><i class="fas fa-sign-out-alt"></i></router-link>
 
+<img src="../assets/logowhite.png" class="logo">  
  <div class="circle-menu">
     <ul>
         <li>
@@ -205,5 +206,17 @@ div.message:before{
 div.message.information:before{
   content:'\f129';
   color: black;
+}
+
+.logout {
+  float: right;
+  margin-top: -7vh;
+  margin-left: 34vh;
+  background-color: #8F8BE6;
+  border-radius: 50%;
+  border: transparent;
+  width: 8vh;
+  font-size: 4vh;
+  color: gainsboro;
 }
 </style>
