@@ -150,7 +150,6 @@ div.message {
 }
 div.message:hover{
   box-shadow: 0 15px 20px rgba(10,0,10,.3);
-  -webkit-filter: brightness(110%);
 }
 
 div.message:before{
