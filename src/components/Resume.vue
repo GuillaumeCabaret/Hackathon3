@@ -13,8 +13,9 @@
   </div>
 <div>
   <div class="information message">
-  <h2>Information</h2>
-	<p>This is an 'information message' div. It helps people get to know the site a little better. </p>
+  <h2>9 personnes sur 10</h2>
+	<p>ne vérifient la pression qu’une fois
+par an au lieu d’une par mois</p>
 </div>
 </div>
 </div>
@@ -35,7 +36,6 @@ export default {
 <style scoped>
 p {
   font-size: 21px;
-
 }
 .logo {
   float: left;
@@ -48,7 +48,6 @@ p {
   top: 32px;
   width: 32px;
   height: 32px;
-  opacity: 0.3;
 }
 .close:hover {
   opacity: 1;
@@ -60,7 +59,7 @@ p {
   content: " ";
   height: 33px;
   width: 2px;
-  background-color: #333;
+  background-color: white;
 }
 .close:before {
   transform: rotate(45deg);
@@ -79,7 +78,7 @@ h1 {
   height: 35vh;
   position: relative;
   top: 19vh;
-  left: -7vh;
+  left: -7.5vh;
 }
 
 .Roundright {
@@ -106,7 +105,7 @@ h1 {
 
 .Roundleft {
   transform: rotate(128deg) translate(-26em) rotate(-127deg);
--webkit-transform: rotate(128deg) translate(-26em) rotate(-127deg);
+  -webkit-transform: rotate(128deg) translate(-26em) rotate(-127deg);
   -ms-transform: rotate(128deg) translate(-26em) rotate(-127deg);
   height: 9vh;
   width: 9vh;
@@ -135,12 +134,12 @@ h2{
 div.message {
   position: relative;
   padding: 10px;
-  padding-left: 35px;
+  padding-left: 18px;
   margin: 30px 10px;
   box-shadow:0 2px 5px rgba(0,0,0,.3);
   background: white;
   color: #8F8BE6;
-  margin-top: -21vh;
+  margin-top: -18vh;
   
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -177,5 +176,7 @@ div.message.information:before{
   content:'\f129';
   color: black;
 }
-
+h2 {
+  font-size : 22pt;
+}
 </style>

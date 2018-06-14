@@ -1,16 +1,17 @@
 <template>
 <div>
-<h1>Compte</h1>
-<img src="../assets/logowhite.png" class="logo">
-<a href="#/menu" class="close"></a>
-<div class="user">
-  <ul>
-  <li>Nom</li>
-  <li>prénom</li>
-  <li>Nombre de commandes éffectuées</li>
-  <li>commande en cours</li>
-  </ul>
-</div>
+  <div>
+      <h1>Mon Compte</h1>
+      <img src="../assets/logowhite.png" class="logo">
+      <a href="#/menu" class="close"></a>
+    </div>
+    <div class="refCar">
+      <p>Nom: </p>
+      <p>Prénom: </p>
+      <p>Nbre de commande: </p>
+      <hr>
+       <p>Commande en cours  :</p>
+    </div>
 </div>
 </template>
 
@@ -51,18 +52,84 @@ export default {
   top: 32px;
   width: 32px;
   height: 32px;
+}
+.close:hover {
+  opacity: 1;
+  color: white;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: white;
+  color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+  color: white;
+}
+.close:after {
+  transform: rotate(-45deg);
+  color: white;
+}
+.refCar {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 2vh;
+  position: absolute;
+  margin-top: 6vh;
+}
+.refCar p {
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  color: #fff;
+}
+.separate {
+  color: #fff;
+}
+.logo {
+  float: left;
+  width: 30%;
+  margin-top: -56px;
+}
+div h1 {
+  float: right;
+  margin-top: -1vh;
+  padding-top: 0;
+  margin-bottom: 30vh;
+  font-size: 2vh;
+  position: absolute;
+  left: 36%;
+}
+hr {
+  position: absolute;
+  width: 21vh;
+  left: 20%;
+  background-color: papayawhip;
+  height: 1.5px;
+}
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
   opacity: 0.3;
 }
 .close:hover {
   opacity: 1;
 }
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 2px;
-  background-color: #333;
+  background-color: white;
 }
 .close:before {
   transform: rotate(45deg);
@@ -70,5 +137,4 @@ export default {
 .close:after {
   transform: rotate(-45deg);
 }
-
 </style>
