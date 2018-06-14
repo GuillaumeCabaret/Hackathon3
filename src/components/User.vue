@@ -1,7 +1,15 @@
 <template>
 <div>
-<h1>User</h1>
+<h1>Compte</h1>
 <img src="../assets/logowhite.png" class="logo">
+<div class="user">
+  <ul>
+  <li>Nom</li>
+  <li>prénom</li>
+  <li>Nombre de commandes éffectuées</li>
+  <li>commande en cours</li>
+  </ul>
+</div>
 </div>
 </template>
 
@@ -21,6 +29,6 @@ export default {
 .logo {
   float: left;
   width: 30%;
-  margin-top: -6vh
+  margin-top: -12vh;
 }
 </style>

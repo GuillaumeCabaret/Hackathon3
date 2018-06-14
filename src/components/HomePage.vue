@@ -4,7 +4,7 @@
 <img class="wheel" src="../assets/accueil.jpg" alt="wheel">
 <div class="text">
   <h3>D'après nos sources, les français ne verifient la pression de leurs pneus qu'une fois par an au lieu d'une fois par mois ce qui peut être extremment dangereux.</h3>
-    <h2>Mais pas de panique Will à la solution pour que le necessaire sois fait pour votre sécurité ! :D</h2>
+    <h2>Mais pas de panique Will à la solution afin que le necessaire sois fait pour votre sécurité ! </h2>
 </div>
     <router-link to="/login" tag="button">Se connecter </router-link>
 </div>
@@ -26,12 +26,13 @@ export default {
 .logo {
   float: left;
   width: 50%;
-  margin-top: -4vh;
+  margin-top: -6vh;
   margin-left: 24%;
 }
 .wheel {
-  margin-left: -10px;
+  margin-left: -18px;
   width: 110%;
+  border-radius: 80px 0 80px 0;
 }
 .text {
   color: white;

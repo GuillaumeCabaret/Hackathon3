@@ -6,10 +6,10 @@
     <div class="login">
   <form>
     <img class="logo_login" src="src/assets/login.png">  
-    <input type="text" name="u" placeholder="Username" required="required" />
+    <input type="text" name="u" placeholder="Utilisateur" required="required" />
     <img class="logo_mdp" src="src/assets/mdp.png">  
-    <input type="password" name="p" placeholder="Password" required="required" />
-    <router-link to="/menu" tag="button">login</router-link>
+    <input type="password" name="p" placeholder="Mot de passe" required="required" />
+    <router-link to="/menu" tag="button">Se connecter</router-link>
     </form>
 </div>
   </div>
@@ -33,7 +33,7 @@ export default {
   width: 55%;
 }
 .carré {
-  margin-top: 60%;
+  margin-top: 58%;
   width: 360px;
   height: 360px;
   background: white;
@@ -54,7 +54,7 @@ input {
   font-size: 15px;
   outline: medium none;
   padding: 10px;
-  width: 250px;
+  width: 238px;
   margin-bottom: 30px;
 }
 
@@ -68,16 +68,18 @@ button {
   cursor: pointer;
   display: block;
   padding: 10px 25px;
-  width: 150px;
-  margin-left: 54%;
+  width: 180px;
+  margin-left: 38%;
   margin-top: -10%;
 }
 .logo_login {
   width: 30%;
   float: left;
+  margin-top: -18%;
 }
 .logo_mdp {
   width: 30%;
   float: left;
+  margin-top: -18%;
 }
 </style>
