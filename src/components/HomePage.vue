@@ -3,8 +3,8 @@
 <img src="../assets/logowhite.png" class="logo">
 <img class="wheel" src="../assets/accueil.jpg" alt="wheel">
 <div class="text">
-  <h3>D'après nos sources, les français ne verifient la pression de leurs pneus qu'une fois par an au lieu d'une fois par mois ce qui peut être extremment dangereux.</h3>
-    <h2>Mais pas de panique Will à la solution afin que le necessaire sois fait pour votre sécurité ! </h2>
+  <h3>D'après nos sources, les Français ne verifient la pression de leurs pneus qu'une fois par an au lieu d'une fois par mois ce qui peut être extrêmement dangereux.</h3>
+    <h2>Mais pas de panique, Will est la solution afin que le nécessaire sois fait pour votre sécurité ! </h2>
 </div>
     <router-link to="/login" tag="button">Se connecter </router-link>
 </div>
@@ -25,9 +25,9 @@ export default {
 <style scoped>
 .logo {
   float: left;
-  width: 50%;
+  width: 30%;
   margin-top: -6vh;
-  margin-left: 24%;
+  margin-left: 35%;
 }
 .wheel {
   margin-left: -18px;
