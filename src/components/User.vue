@@ -8,10 +8,11 @@
     <div class="refCar">
       <p>Nom: </p>
       <p>Prénom: </p>
-      <p>Nbre de commande: </p>
+      <p>Nombre de commande: </p>
       <hr>
-       <p>Commande en cours  :</p>
+      <p>Commande en cours  :</p>
     </div>
+    <router-link to="/menu" tag="button"><i class="far fa-edit"></i></router-link>
 </div>
 </template>
 
@@ -41,6 +42,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+button {
+    border-radius: 50%;
+    height: 8vh;
+    width: 8vh;
+    font-size: 4vh;
+    color: white;
+    background-color: deepskyblue;
+    position: absolute;
+    top: 90%;
+    left: 78%;
+    border: 2px solid;
+    box-shadow: 1px 1px 16px #555;
+}
 .logo {
   float: left;
   width: 30%;
