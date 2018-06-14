@@ -6,14 +6,14 @@
     </div>
     <div class="refCar">
       <p>Marque:
-        <select v-model="selectedMarque">
+        <select v-model="selectedMarque" @change="getModel">
           <option v-for="(brand, index ) of brands" :key="index">{{ brand.brandName }}</option>
         </select>
       </p>
 
       <p>Modèle:
         <select v-model="selectedModel">
-          <option v-for="(model, index ) of models" :key="index">{{ model.brandName }}</option>
+          <option v-for="(model, index ) of models" :key="index">{{ model.modelName }}</option>
         </select>
       </p>
 
@@ -21,14 +21,14 @@
          <select v-model="selectedCouleur">
           <option v-for="(brand, index ) of brands" :key="index">{{ brand.brandName }}</option>
         </select>
-      </p>
+      </p> -->
       <p>Immatriculation:
          <select v-model="selectedImmat">
           <option v-for="(brand, index ) of brands" :key="index">{{ brand.brandName }}</option>
         </select>
       </p>
 
-      <p>Types Pneus :
+ <!--     <p>Types Pneus :
          <select v-model="selectedPneus">
           <option v-for="(brand, index ) of brands" :key="index">{{ brand.brandName }}</option>
         </select>
@@ -47,19 +47,33 @@
 export default {
   name: "Vehicules",
   data() {
-    selected: ""
+
     return {
       posts: [],
       errors: [],
       brands:[],
-      models:[], 
+      models:[],
       brandName:[],
       selectedMarque: "",
       selectedModel:"",
       modelValue:"",
     };
   },
+methods: {
+  getModel: function() {
+    console.log(this.selectedMarque)
+    this.axios.get(`https://fipa201gt4.execute-api.eu-central-1.amazonaws.com/dev/model/` + this.selectedMarque)
+      .then(response => {
+        // JSON responses are automatically parsed.
+        this.models = response.data;}
 
+      )
+
+      .catch(e => {
+        this.errors.push(e);
+      })
+  },
+},
 
   created() {
     this.axios.get(`https://fipa201gt4.execute-api.eu-central-1.amazonaws.com/dev/brand`)
