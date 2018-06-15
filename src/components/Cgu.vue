@@ -24,7 +24,7 @@ xxx development – www.azerty-dev.com
 16 rue Maurice Bouchor - 69007 Lyon
 Tél : 0237210228
 <hr>
-Informatique et liberté : RGPD
+<p>Informatique et liberté : RGPD</p>
 <p>
 Aucune information personnelle n'est collectée à votre insu. Les informations que vous nous communiquez lors d’une demande de devis, de renseignements ou d’inscription à la newsletter par courrier, par téléphone, par e-mail ou par formulaire sont uniquement destinées au traitement administratif et commercial de votre demande par la société Will.
 </p><p>
@@ -52,7 +52,7 @@ De même que la société Will  ne pourra en aucune façon être tenue pour resp
 </p>
     </div>
     <div>
-      <router-link to="/menu" tag="button">Menu</router-link>
+      <router-link to="/menu" tag="button" class= "menu">Menu</router-link>
     </div>
 </div>
 </template>
@@ -105,5 +105,18 @@ p {
 }
 h3 {
   color: white;
+}
+.menu {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 18px 18px 18px 18px;
+  box-shadow: 0 1px 0 #e6f5ff inset;
+  color: #8f8be6;
+  cursor: pointer;
+  display: block;
+  padding: 8px 25px;
+  width: 180px;
+  margin-left: 25%;
 }
 </style>

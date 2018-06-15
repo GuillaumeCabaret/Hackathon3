@@ -41,7 +41,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 span {
-  color: white
+  color: white;
 }
 p {
   font-size: 21px;
@@ -195,16 +195,18 @@ h2 {
   position: absolute;
   top: 15%;
   font-size: 20px;
+  color: #ffffff;
 }
 .etatar {
   position: absolute;
-  top:18%;
+  top: 18%;
   font-size: 20px;
+  color: #ffffff;
 }
 .orange {
-  color: orange
+  color: orange;
 }
 .vert {
-  color: greenyellow
+  color: greenyellow;
 }
 </style>

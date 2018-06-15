@@ -95,29 +95,29 @@
 </template>
 
 <script>
-import modal from '../components/modal.vue';
-import router from '../router/index.js';
+import modal from "../components/modal.vue";
+import router from "../router/index.js";
 export default {
   name: "Command",
   components: {
-      modal,
-    },
+    modal
+  },
   data() {
     return {
       msg: "Command",
       calcul: "5",
       prix: "4.00",
-      isModalVisible: false,
+      isModalVisible: false
     };
   },
   methods: {
-      showModal() {
-        this.isModalVisible = true;
-      },
-      closeModal() {
-        router.push({ path: 'menu' })
-      }
+    showModal() {
+      this.isModalVisible = true;
     },
+    closeModal() {
+      router.push({ path: "menu" });
+    }
+  }
 };
 </script>
 
@@ -275,10 +275,9 @@ a {
   margin-top: -40px;
   width: 100%;
   text-align: center;
-
 }
 
-a.btn {
+.btn {
   background: #ffffff;
   border: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
@@ -289,6 +288,6 @@ a.btn {
   display: block;
   padding: 10px 25px;
   width: 180px;
-  margin-left: 15%;
+  margin-left: 25%;
 }
 </style>

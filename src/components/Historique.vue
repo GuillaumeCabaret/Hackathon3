@@ -80,7 +80,7 @@
 <div>
   <div class="information message">
   <h2>6 %</h2>
-	<p>C'est le pourcentage des accidents mortels dûs à un défaut de gonflage des pneumatiques</p>
+	<p>C'est le pourcentage des accidents mortels dûs à un défaut de gonflage</p>
 </div>
 </div>
 </div>
@@ -101,7 +101,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-  margin-left: 30px;;
+  margin-left: 30px;
 }
 .logo {
   float: left;
