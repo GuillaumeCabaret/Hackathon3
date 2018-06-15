@@ -8,42 +8,55 @@
     <div class="refCar">
       <p>Marque:
         <select v-model="selectedMarque" @change="callModel">
-          <option disable value="">Choississez votre marque</option>
+          <option disable value="">Choisissez votre marque</option>
           <option v-for="(brand, index ) of brands" :key="index">{{ brand.brandName }}</option>
         </select>
       </p>
 
       <p>Modèle:
         <select v-model="selectedModel" @change="callVersion">
-          <option disable value="">Choississez votre modèle</option>
+          <option disable value="">Choisissez votre modèle</option>
           <option v-for="(model, index ) of models" :key="index">{{ model.modelName }}</option>
         </select>
       </p>
 
       <p>Version:
         <select v-model="selectedModVersion" @change="callPneu">
-          <option disable value="">Choississez la version</option>
+          <option disable value="">Choisissez la version</option>
           <option v-for="(modVersion, index ) of modVersions" :key="index">{{ modVersion.versionName }}</option>
         </select>
       </p>
       <p>Types Pneus :
         <select v-model="selectedPneus">
-          <option disable value="">Choississez vos pneus</option>
+          <option disable value="">Choisissez vos pneus</option>
           <option v-for="(pneu, index ) of pneus" :key="index">{{ pneu.tyreName }}</option>
         </select>
       </p>
       <p>Couleur:
         <select v-model="selectedCouleur">
-          <option disable value="">Choississez votre couleur</option>
+          <option disable value="">Choisissez votre couleur</option>
           <option v-for="(color, index ) of colors" :key="index">{{ color.colorName }}</option>
         </select>
       </p>
-      <p>Immatriculation:
-        <input type="text" class='immat'>
-      </p>
-       <hr>
+      <button @click="saveData()">Enregistrer</button>
+      <hr>
     </div>
 
+  <div class="car" v-if="showInfos">
+    <p>VOITURES :</p>
+    <br>
+    {{selectedMarque}}
+    <br>
+    {{selectedModel}}
+    <br>
+    {{selectedModVersion}}
+    <br>
+    {{selectedPneus}}
+    <br>
+    {{selectedCouleur}}
+
+
+  </div>
 
 
 
@@ -57,8 +70,8 @@
 export default {
   name: "Vehicules",
   data() {
-    selected: "";
     return {
+      showInfos: false,
       posts: [],
       errors: [],
       brands: [],
@@ -132,7 +145,6 @@ export default {
         )
         .then(response => {
           this.modVersions = response.data;
-          console.log("modVersions");
         })
         .catch(e => {
           this.errors.push(e);
@@ -159,6 +171,9 @@ export default {
         .catch(e => {
           this.errors.push(e);
         });
+    },
+    saveData: function() {
+      this.showInfos = true;
     }
   }
 };
@@ -195,7 +210,7 @@ div h1 {
 }
 hr {
   position: absolute;
-  width: 21vh;
+  width: 28vh;
   left: 20%;
   background-color: papayawhip;
   height: 1.5px;
@@ -224,5 +239,11 @@ hr {
 }
 .close:after {
   transform: rotate(-45deg);
+}
+.car {
+  position: absolute;
+  top: 60%;
+  left: 28%;
+  color: #fff;
 }
 </style>
