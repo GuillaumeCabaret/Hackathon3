@@ -6,11 +6,11 @@
       <a href="#/menu" class="close"></a>
     </div>
     <div class="refCar">
-      <p>Nom: </p>
-      <p>Prénom: </p>
-      <p>Nombre de commande: </p>
+      <p>Nom:  Martin </p>
+      <p>Prénom:  Michel </p>
+      <p>Nombre de commande: 5 </p>
       <hr>
-      <p>Commande en cours  : 8</p>
+      <p>Commande en cours  : 1</p>
     </div>
     <router-link to="/menu" tag="button"><i class="far fa-edit"></i></router-link>
 </div>
@@ -25,20 +25,20 @@ export default {
       errors: []
     };
   },
-  created() {
-    axios
-      .get(
-        `https://fipa201gt4.execute-api.eu-central-1.amazonaws.com/dev/
-`
-      )
-      .then(response => {
-        // JSON responses are automatically parsed.
-        this.posts = response.data;
-      })
-      .catch(e => {
-        this.errors.push(e);
-      });
-  }
+//   created() {
+//     this.axios
+//       .get(
+//         `https://fipa201gt4.execute-api.eu-central-1.amazonaws.com/dev/
+// `
+//       )
+//       .then(response => {
+//         // JSON responses are automatically parsed.
+//         this.posts = response.data;
+//       })
+//       .catch(e => {
+//         this.errors.push(e);
+//       });
+//   }
 };
 </script>
 
@@ -122,7 +122,7 @@ h1 {
 hr {
   position: absolute;
   width: 21vh;
-  left: 20%;
+  left: 50%;
   background-color: papayawhip;
   height: 1.5px;
 }

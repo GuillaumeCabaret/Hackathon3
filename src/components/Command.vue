@@ -60,7 +60,7 @@
 </select></p>
 <p>Véhicule: <select>
   <option value="volvo">Audi</option>
-  <option value="saab">Saab</option>
+  <option value="saab">Maserati</option>
   <option value="mercedes">Mercedes</option>
   <option value="audi">Audi</option>
 </select></p><p>Combien de mn disposez vous ? <select>
@@ -87,7 +87,7 @@ export default {
     return {
       msg: "Command",
       calcul: "5",
-      prix: "3.18"
+      prix: "4.00"
     };
   }
 };
@@ -95,6 +95,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+  margin-left: 30px;
+}
 .logo {
   float: left;
   width: 30%;

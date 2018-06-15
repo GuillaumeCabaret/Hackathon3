@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Informations vehicule -->
     <div class="vehHead">
       <h1>Mes véhicules</h1>
       <img src="../assets/logowhite.png" class="logo">
@@ -38,10 +39,14 @@
           <option v-for="(color, index ) of colors" :key="index">{{ color.colorName }}</option>
         </select>
       </p>
-      <button class="save" @click="saveData()">Enregistrer</button>
+      <p>Immatriculation:
+        <input type="text" class="selectedImmat">
+          <button class="save" @click="saveData()">Enregistrer</button>
       <br>
       <hr>
     </div>
+
+<!--Recupération des information saisies par le user -->
 
   <div class="car" v-if="showInfos">
     <p class= "title1">VOITURES :</p>
@@ -52,11 +57,7 @@
       {{selectedPneus}}
       {{selectedCouleur}}</p>
 
-
-  </div>
-
-
-
+    </div>
   </div>
 
 </template>
@@ -112,6 +113,8 @@ export default {
   },
 
   methods: {
+
+    // connexion aux API
     callModel: function() {
       this.axios
         .get(
@@ -168,12 +171,14 @@ export default {
         .catch(e => {
           this.errors.push(e);
         });
+
     },
     saveData: function() {
       this.showInfos = true;
     }
   }
 };
+
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

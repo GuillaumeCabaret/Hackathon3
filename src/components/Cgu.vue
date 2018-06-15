@@ -1,7 +1,7 @@
 <template>
 <div>
   <div>
-    <h1>Cgu</h1>
+    <h1>CGU</h1>
     <img src="../assets/logowhite.png" class="logo">
     <a href="#/menu" class="close"></a>
     </div>
@@ -20,11 +20,12 @@ Téléphone : +33 (0)4.74.00.00.00
 Responsable de la rédaction :
 </p><p>
 Développement, hébergement :
-Ice development – www.ice-dev.com
+xxx development – www.azerty-dev.com
 16 rue Maurice Bouchor - 69007 Lyon
-Tél : 08 21 23 03 54
-Informatique et liberté
-</p><p>
+Tél : 0237210228
+<hr>
+Informatique et liberté : RGPD
+<p>
 Aucune information personnelle n'est collectée à votre insu. Les informations que vous nous communiquez lors d’une demande de devis, de renseignements ou d’inscription à la newsletter par courrier, par téléphone, par e-mail ou par formulaire sont uniquement destinées au traitement administratif et commercial de votre demande par la société Will.
 </p><p>
 Elles ne font l'objet d'aucune cession à des tiers. Will  traite les informations qui vous concernent avec la plus grande confidentialité.
@@ -34,7 +35,7 @@ Droit d'auteur / copyright
 </p><p>
 L'ensemble du contenu du présent site Internet, y compris nom de domaine, marques, logo, texte… est la propriété de la société Will, il est protégé par les lois en vigueur de la législation française sur la propriété intellectuelle.
 </p><p>
-Aucun élément de ce site ne peut être copié, reproduit, détourné ou dénaturé, et ce, sur quelque support que ce soit, sans constituer un acte de contrefaçon au sens des articles L 335-2 et suivants du code de la propriété intellectuelle. 
+Aucun élément de ce site ne peut être copié, reproduit, détourné ou dénaturé, et ce, sur quelque support que ce soit, sans constituer un acte de contrefaçon au sens des articles L 335-2 et suivants du code de la propriété intellectuelle.
 Accès au site
 </p><p>
 L'utilisateur de ce site reconnaît disposer de la compétence et des moyens nécessaires pour accéder et utiliser ce site. Will ne saurait être tenu responsable des éléments en dehors de son contrôle et des dommages qui pourraient éventuellement être subis par l'environnement technique de l'utilisateur et notamment, ses ordinateurs, logiciels, équipements réseaux et tout autre matériel utilisé pour accéder ou utiliser le service et/ou les informations.

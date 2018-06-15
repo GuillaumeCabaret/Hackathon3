@@ -4,11 +4,11 @@
   <h1>Historique</h1>
   <img src="../assets/logowhite.png" class="logo">
   <a href="#/menu" class="close"></a>
-  </div>    
+  </div>
 <div class="timeline-container">
   <ul class="timeline">
     <li class="timeline-item">
-      
+
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
@@ -22,7 +22,7 @@
     </li>
 
     <li class="timeline-item">
-      
+
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
@@ -36,7 +36,7 @@
     </li>
 
     <li class="timeline-item">
-      
+
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
@@ -50,7 +50,7 @@
     </li>
 
     <li class="timeline-item">
-      
+
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
@@ -63,7 +63,7 @@
       </div>
     </li>
     <li class="timeline-item">
-      
+
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
@@ -80,7 +80,7 @@
 <div>
   <div class="information message">
   <h2>6 %</h2>
-	<p>Est le nombre d'accident mortel sur la route</p>
+	<p>C'est le pourcentage des accidents mortels dûs à un défaut de gonflage des pneumatiques</p>
 </div>
 </div>
 </div>
@@ -100,6 +100,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+  margin-left: 30px;;
+}
 .logo {
   float: left;
   width: 30%;
