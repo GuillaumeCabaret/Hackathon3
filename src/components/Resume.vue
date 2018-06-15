@@ -5,14 +5,17 @@
     <img src="../assets/logowhite.png" class="logo">
     <a href="#/menu" class="close"></a>
 
-    <img src="../assets/voiture.png" class="voiture">
-    <div class="Roundright"><p>2.3 bar</p></div>
-    <div class="RoundrightDown"><p>2.5 bar</p></div>
-    <div class="Roundleft"><p>2.3 bar</p></div>
-    <div class="RoundleftDown"><p>2.5 bar</p></div>
+<div><p class="etatav">Etat des Pneus avant : <span class="orange">Moyen</span></p>
+   <p class="etatar">Etat des Pneus arrière : <span class="vert">Excellent</span></p>
+   </div>
+      <img src="../assets/voiture.png" class="voiture">
+      <div class="Roundright"><p>2.3 bar</p></div>
+      <div class="RoundrightDown"><p>2.5 bar</p></div>
+      <div class="Roundleft"><p>2.3 bar</p></div>
+      <div class="RoundleftDown"><p>2.5 bar</p></div>
   </div>
 
-   <div><p class="etat">Etgfdgsdfgsdfgsdfgsfgsdfgd</p> </div>
+
 
   <div>
     <div class="information message">
@@ -37,6 +40,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+span {
+  color: white
+}
 p {
   font-size: 21px;
 }
@@ -184,5 +190,21 @@ div.message.information:before {
 }
 h2 {
   font-size: 22pt;
+}
+.etatav {
+  position: absolute;
+  top: 15%;
+  font-size: 20px;
+}
+.etatar {
+  position: absolute;
+  top:18%;
+  font-size: 20px;
+}
+.orange {
+  color: orange
+}
+.vert {
+  color: greenyellow
 }
 </style>
