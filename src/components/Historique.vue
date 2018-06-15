@@ -12,8 +12,8 @@
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
-        <div class="timeline-title"><i class="fas fa-car"></i>Voiture :</div>
-        <div class="timeline-time">11:00 AM</div>
+        <div class="timeline-title"><i class="fas fa-car"></i> Clio</div>
+        <div class="timeline-time">11:00</div>
       </div>
       <!-- secondary-content -->
       <div class="secondary-content">
@@ -26,8 +26,8 @@
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
-        <div class="timeline-title"><i class="fas fa-car"></i>Voiture :</div>
-        <div class="timeline-time">11:00 AM</div>
+        <div class="timeline-title"><i class="fas fa-car"></i> Maserati</div>
+        <div class="timeline-time">9:30</div>
       </div>
       <!-- secondary-content -->
       <div class="secondary-content">
@@ -40,8 +40,8 @@
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
-        <div class="timeline-title"><i class="fas fa-car"></i>Voiture :</div>
-        <div class="timeline-time">11:00 AM</div>
+        <div class="timeline-title"><i class="fas fa-car"></i> Maserati</div>
+        <div class="timeline-time">14:00 </div>
       </div>
       <!-- secondary-content -->
       <div class="secondary-content">
@@ -54,8 +54,8 @@
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
-        <div class="timeline-title"><i class="fas fa-car"></i>Voiture :</div>
-        <div class="timeline-time">11:00 AM</div>
+        <div class="timeline-title"><i class="fas fa-car"></i> Clio</div>
+        <div class="timeline-time">18:00 </div>
       </div>
         <!-- secondary-content -->
       <div class="secondary-content">
@@ -67,8 +67,8 @@
       <!-- primary-content -->
       <div class="primary-content">
           <i class="far fa-clock"></i>
-        <div class="timeline-title"><i class="fas fa-car"></i>Voiture :</div>
-        <div class="timeline-time">11:00 AM</div>
+        <div class="timeline-title"><i class="fas fa-car"></i> Clio</div>
+        <div class="timeline-time">16:00</div>
       </div>
       <!-- secondary-content -->
       <div class="secondary-content">

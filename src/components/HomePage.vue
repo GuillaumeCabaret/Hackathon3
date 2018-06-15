@@ -31,7 +31,7 @@ export default {
   margin-left: 35%;
 }
 .wheel {
-  margin-left: 0px;
+  
   width: 100%;
   border-radius: 80px 0 80px 0;
 }

@@ -1,9 +1,9 @@
 <template>
 <div>
   <div>
-  <h1>Compte Rendu</h1>
-  <img src="../assets/logowhite.png" class="logo">
-  <a href="#/menu" class="close"></a>
+    <h1>Compte Rendu</h1>
+    <img src="../assets/logowhite.png" class="logo">
+    <a href="#/menu" class="close"></a>
 
     <img src="../assets/voiture.png" class="voiture">
     <div class="Roundright"><p>2.3 bar</p></div>
@@ -11,13 +11,16 @@
     <div class="Roundleft"><p>2.3 bar</p></div>
     <div class="RoundleftDown"><p>2.5 bar</p></div>
   </div>
-<div>
-  <div class="information message">
-  <h2>9 personnes sur 10</h2>
-	<p>ne vérifient la pression qu’une fois
-par an au lieu d’une par mois</p>
-</div>
-</div>
+
+   <div><p class="etat">Etgfdgsdfgsdfgsdfgsfgsdfgd</p> </div>
+
+  <div>
+    <div class="information message">
+      <h2>9 personnes sur 10</h2>
+	    <p>ne vérifient la pression qu’une fois
+      par an au lieu d’une par mois</p>
+    </div>
+  </div>
 </div>
 </template>
 
