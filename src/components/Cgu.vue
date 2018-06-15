@@ -21,7 +21,7 @@ Responsable de la rédaction :
 </p><p>
 Développement, hébergement :
 xxx development – www.azerty-dev.com
-16 rue Maurice Bouchor - 69007 Lyon
+ZI Edmond Poillot - 28000 Chartres
 Tél : 0237210228
 <hr>
 <p>Informatique et liberté : RGPD</p>

@@ -13,7 +13,7 @@
       <div class="primary-content">
           <i class="far fa-clock"></i>
         <div class="timeline-title"><i class="fas fa-car"></i> Clio</div>
-        <div class="timeline-time">11:00</div>
+        <div class="timeline-time">11:00 18/06/2017</div>
       </div>
       <!-- secondary-content -->
       <div class="secondary-content">
@@ -27,7 +27,7 @@
       <div class="primary-content">
           <i class="far fa-clock"></i>
         <div class="timeline-title"><i class="fas fa-car"></i> Maserati</div>
-        <div class="timeline-time">9:30</div>
+        <div class="timeline-time">9:30 25/07/2017</div>
       </div>
       <!-- secondary-content -->
       <div class="secondary-content">
@@ -41,7 +41,7 @@
       <div class="primary-content">
           <i class="far fa-clock"></i>
         <div class="timeline-title"><i class="fas fa-car"></i> Maserati</div>
-        <div class="timeline-time">14:00 </div>
+        <div class="timeline-time">14:00  06/10/2017</div>
       </div>
       <!-- secondary-content -->
       <div class="secondary-content">
@@ -55,7 +55,7 @@
       <div class="primary-content">
           <i class="far fa-clock"></i>
         <div class="timeline-title"><i class="fas fa-car"></i> Clio</div>
-        <div class="timeline-time">18:00 </div>
+        <div class="timeline-time">18:00 25/10/2017</div>
       </div>
         <!-- secondary-content -->
       <div class="secondary-content">
@@ -68,7 +68,7 @@
       <div class="primary-content">
           <i class="far fa-clock"></i>
         <div class="timeline-title"><i class="fas fa-car"></i> Clio</div>
-        <div class="timeline-time">16:00</div>
+        <div class="timeline-time">16:00 26/01/2018</div>
       </div>
       <!-- secondary-content -->
       <div class="secondary-content">
