@@ -73,25 +73,54 @@
 <p>Prix estimé : {{ prix }} € </p>
   </div>
   <div class="hot-container">
-	<p>
+	<!-- <p>
 		<a href="#/menu" class="btn">Commander</a>
-	</p>
+	</p> -->
+  <div id="app">
+    <button
+      type="button"
+      class="btn"
+      @click="showModal"
+    >
+      Reservez !
+    </button>
+
+    <modal
+      v-show="isModalVisible"
+      @close="closeModal"
+    />
+  </div>
 </div>
 </div>
 </template>
 
 <script>
+import modal from '../components/modal.vue';
+import router from '../router/index.js';
 export default {
   name: "Command",
+  components: {
+      modal,
+    },
   data() {
     return {
       msg: "Command",
       calcul: "5",
-      prix: "4.00"
+      prix: "4.00",
+      isModalVisible: false,
     };
-  }
+  },
+  methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        router.push({ path: 'menu' })
+      }
+    },
 };
 </script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -243,9 +272,10 @@ a {
 
 .hot-container {
   min-height: 100px;
-  margin-top: 100px;
+  margin-top: -40px;
   width: 100%;
   text-align: center;
+
 }
 
 a.btn {
