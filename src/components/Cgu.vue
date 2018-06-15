@@ -72,7 +72,7 @@ export default {
 .logo {
   float: left;
   width: 30%;
-  margin-top: -11vh
+  margin-top: -13vh;
 }
 .close {
   position: absolute;
@@ -84,10 +84,11 @@ export default {
 .close:hover {
   opacity: 1;
 }
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 2px;
   background-color: white;

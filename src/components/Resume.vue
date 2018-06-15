@@ -44,8 +44,8 @@ p {
 }
 .close {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: 20px;
+  top: 28px;
   width: 32px;
   height: 32px;
 }
@@ -69,9 +69,12 @@ p {
 }
 
 h1 {
-  font-size: 22px;
+  float: right;
+  margin-top: -1vh;
+  padding-top: 0;
+  margin-bottom: 30vh;
   position: absolute;
-  left: 34%;
+  left: 30%;
 }
 
 .voiture {
@@ -124,7 +127,7 @@ h1 {
   border-radius: 50%;
   line-height: 8vh;
 }
-h2{
+h2 {
   font-weight: 100;
   font-size: 30pt;
   line-height: 1.3em;
@@ -136,47 +139,47 @@ div.message {
   padding: 10px;
   padding-left: 18px;
   margin: 30px 10px;
-  box-shadow:0 2px 5px rgba(0,0,0,.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   background: white;
-  color: #8F8BE6;
+  color: #8f8be6;
   margin-top: -18vh;
-  
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-div.message:hover{
-  box-shadow: 0 15px 20px rgba(10,0,10,.3);
+div.message:hover {
+  box-shadow: 0 15px 20px rgba(10, 0, 10, 0.3);
 }
 
-div.message:before{
-  content: '';
+div.message:before {
+  content: "";
   font-family: FontAwesome;
   position: absolute;
   display: block;
   top: -21px;
   left: 50%;
-  margin:0 -21px;
+  margin: 0 -21px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   width: 24px;
-  padding:10px;
+  padding: 10px;
   background: inherit;
-  box-shadow:0 5px 10px rgba(0,0,0,.25);
-  color: rgba(255,255,255,.75);
-  border-radius:50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
   border: 2px solid transparent;
   z-index: 2;
 }
 
-div.message.information:before{
-  content:'\f129';
+div.message.information:before {
+  content: "\f129";
   color: black;
 }
 h2 {
-  font-size : 22pt;
+  font-size: 22pt;
 }
 </style>

@@ -38,22 +38,19 @@
           <option v-for="(color, index ) of colors" :key="index">{{ color.colorName }}</option>
         </select>
       </p>
-      <button @click="saveData()">Enregistrer</button>
+      <button class="save" @click="saveData()">Enregistrer</button>
+      <br>
       <hr>
     </div>
 
   <div class="car" v-if="showInfos">
-    <p>VOITURES :</p>
-    <br>
-    {{selectedMarque}}
-    <br>
-    {{selectedModel}}
-    <br>
-    {{selectedModVersion}}
-    <br>
-    {{selectedPneus}}
-    <br>
-    {{selectedCouleur}}
+    <p class= "title1">VOITURES :</p>
+    <p class= "cars">
+      {{selectedMarque}}
+      {{selectedModel}}
+      {{selectedModVersion}}
+      {{selectedPneus}}
+      {{selectedCouleur}}</p>
 
 
   </div>
@@ -197,16 +194,16 @@ export default {
 .logo {
   float: left;
   width: 30%;
-  margin-top: -56px;
+  margin-top: -6vh;
 }
-div h1 {
+
+h1 {
   float: right;
   margin-top: -1vh;
   padding-top: 0;
   margin-bottom: 30vh;
-  font-size: 2vh;
   position: absolute;
-  left: 36%;
+  left: 30%;
 }
 hr {
   position: absolute;
@@ -217,8 +214,8 @@ hr {
 }
 .close {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: 20px;
+  top: 28px;
   width: 32px;
   height: 32px;
 }
@@ -242,8 +239,35 @@ hr {
 }
 .car {
   position: absolute;
-  top: 60%;
-  left: 28%;
+  top: 65%;
+  left: 17%;
   color: #fff;
+}
+.cars,
+.title1 {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 18px 18px 18px 18px;
+  box-shadow: 0 1px 0 #e6f5ff inset;
+  color: #8f8be6;
+  cursor: pointer;
+  display: block;
+  padding: 5px 25px;
+  width: 180px;
+}
+.save {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 18px 18px 18px 18px;
+  box-shadow: 0 1px 0 #e6f5ff inset;
+  color: #8f8be6;
+  cursor: pointer;
+  display: block;
+  padding: 10px 25px;
+  width: 180px;
+  margin-left: 34.5%;
+  margin-top: 10%;
 }
 </style>

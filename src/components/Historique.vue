@@ -103,22 +103,23 @@ export default {
 .logo {
   float: left;
   width: 30%;
-  margin-top: -11vh
+  margin-top: -13vh;
 }
 .close {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: 20px;
+  top: 28px;
   width: 32px;
   height: 32px;
 }
 .close:hover {
   opacity: 1;
 }
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 2px;
   background-color: white;
@@ -319,7 +320,7 @@ body {
 }
 
 /* Message information */
-h2{
+h2 {
   font-weight: 100;
   font-size: 30pt;
   line-height: 1.3em;
@@ -330,43 +331,43 @@ div.message {
   position: relative;
   padding: 10px;
   margin: 30px 10px;
-  box-shadow:0 2px 5px rgba(0,0,0,.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   background: white;
-  color: #8F8BE6;
+  color: #8f8be6;
   margin-top: 65vh;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-div.message:hover{
-  box-shadow: 0 15px 20px rgba(10,0,10,.3);
+div.message:hover {
+  box-shadow: 0 15px 20px rgba(10, 0, 10, 0.3);
 }
 
-div.message:before{
-  content: '';
+div.message:before {
+  content: "";
   font-family: FontAwesome;
   position: absolute;
   display: block;
   top: -21px;
   left: 50%;
-  margin:0 -21px;
+  margin: 0 -21px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   width: 24px;
-  padding:10px;
+  padding: 10px;
   background: inherit;
-  box-shadow:0 5px 10px rgba(0,0,0,.25);
-  color: rgba(255,255,255,.75);
-  border-radius:50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
   border: 2px solid transparent;
   z-index: 2;
 }
 
-div.message.information:before{
-  content:'\f129';
+div.message.information:before {
+  content: "\f129";
   color: black;
 }
 </style>

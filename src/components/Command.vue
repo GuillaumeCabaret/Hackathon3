@@ -1,14 +1,14 @@
 <template>
 <div>
 <div>
-<h2>Commander</h2>
+<h1>Commander</h1>
 <img src="../assets/logowhite.png" class="logo">
 <a href="#/menu" class="close"></a>
 </div>
 <div style="margin-top: 7vh;">
 <div class="calendar">
   <hgroup>
-    <h1>June</h1>
+    <h1 class="month">June</h1>
   </hgroup>
   <ul>
     <li>1</li>
@@ -55,8 +55,8 @@
    <p>Lieu: <select>
   <option value="volvo">Chartres</option>
   <option value="saab">La Loupe</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
+  <option value="mercedes">Nantes</option>
+  <option value="audi">Le Mans</option>
 </select></p>
 <p>Véhicule: <select>
   <option value="volvo">Audi</option>
@@ -98,22 +98,23 @@ export default {
 .logo {
   float: left;
   width: 30%;
-  margin-top: -11vh
+  margin-top: -13vh;
 }
 .close {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: 22px;
+  top: 20px;
   width: 32px;
   height: 32px;
 }
 .close:hover {
   opacity: 1;
 }
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 2px;
   background-color: white;
@@ -121,7 +122,7 @@ export default {
 .close:before {
   transform: rotate(45deg);
 }
-.close:after { 
+.close:after {
   transform: rotate(-45deg);
 }
 /* Calendar */
@@ -135,7 +136,7 @@ body {
   position: relative;
   display: block;
   margin: auto;
-  background-color: rgba(44,44,44,0.777);
+  background-color: rgba(44, 44, 44, 0.777);
   border-radius: 8%;
   width: 350px;
   height: 330px;
@@ -145,15 +146,14 @@ hgroup {
   display: block;
   margin: auto;
 }
-h1 {
+.month {
   text-shadow: 1.2px 1.2px 0.6px #fff;
   text-align: right;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   right: 20px;
   top: 0px;
   color: white;
   position: relative;
-  font-size: 2.4em;
 }
 
 ul {
@@ -167,42 +167,42 @@ ul li {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: rgba(44,44,44,0.422);
+  background-color: rgba(44, 44, 44, 0.422);
   margin-right: 2px;
   margin-top: 2px;
   text-align: center;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   cursor: pointer;
   border-radius: 50%;
   line-height: 5vh;
 }
 ul li:hover {
   color: tomato;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .notificacion:not(:hover) {
   position: relative;
   display: block;
   width: 100%;
   height: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
-  background-color: rgba(44,44,44,0.322);
+  background-color: rgba(44, 44, 44, 0.322);
 }
 .notificacion {
-    position: relative;
+  position: relative;
   display: block;
   width: 100%;
   height: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
   background-color: #000;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .notificacion h3 {
   left: 30px;
@@ -230,39 +230,32 @@ ul li:hover {
   top: 7px;
   left: 130px;
 }
-.hot-container p { margin-top: -60px; }
-a { text-decoration: none; margin: 0 10px; }
+.hot-container p {
+  margin-top: -60px;
+}
+a {
+  text-decoration: none;
+  margin: 0 10px;
+}
 
 .hot-container {
-	min-height: 100px;
-	margin-top: 100px;
-	width: 100%;
-	text-align: center;
+  min-height: 100px;
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
 }
 
 a.btn {
-	display: inline-block;
-	color: #666;
-	background-color: #eee;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 12px;
-	padding: 10px 30px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border: 1px solid rgba(0,0,0,0.3);
-	border-bottom-width: 3px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 18px 18px 18px 18px;
+  box-shadow: 0 1px 0 #e6f5ff inset;
+  color: #8f8be6;
+  cursor: pointer;
+  display: block;
+  padding: 10px 25px;
+  width: 180px;
+  margin-left: 15%;
 }
-
-	a.btn:hover {
-		background-color: #e3e3e3;
-		border-color: rgba(0,0,0,0.5);
-	}
-	
-	a.btn:active {
-		background-color: #CCC;
-		border-color: rgba(0,0,0,0.9);
-	}
-
 </style>

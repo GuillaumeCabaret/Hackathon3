@@ -10,7 +10,7 @@
       <p>Prénom: </p>
       <p>Nombre de commande: </p>
       <hr>
-      <p>Commande en cours  :</p>
+      <p>Commande en cours  : 8</p>
     </div>
     <router-link to="/menu" tag="button"><i class="far fa-edit"></i></router-link>
 </div>
@@ -21,39 +21,41 @@ export default {
   name: "User",
   data() {
     return {
-       posts: [],
+      posts: [],
       errors: []
     };
   },
- created() {
-    axios.get(`https://fipa201gt4.execute-api.eu-central-1.amazonaws.com/dev/
-`)
-    .then(response => {
-      // JSON responses are automatically parsed.
-      this.posts = response.data
-    })
-    .catch(e => {
-      this.errors.push(e)
-    })
-},
-}
-
+  created() {
+    axios
+      .get(
+        `https://fipa201gt4.execute-api.eu-central-1.amazonaws.com/dev/
+`
+      )
+      .then(response => {
+        // JSON responses are automatically parsed.
+        this.posts = response.data;
+      })
+      .catch(e => {
+        this.errors.push(e);
+      });
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 button {
-    border-radius: 50%;
-    height: 8vh;
-    width: 8vh;
-    font-size: 4vh;
-    color: white;
-    background-color: deepskyblue;
-    position: absolute;
-    top: 90%;
-    left: 78%;
-    border: 2px solid;
-    box-shadow: 1px 1px 16px #555;
+  border-radius: 50%;
+  height: 8vh;
+  width: 8vh;
+  font-size: 4vh;
+  color: white;
+  background-color: deepskyblue;
+  position: absolute;
+  top: 90%;
+  left: 78%;
+  border: 2px solid;
+  box-shadow: 1px 1px 16px #555;
 }
 .logo {
   float: left;
@@ -62,8 +64,8 @@ button {
 }
 .close {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: 20px;
+  top: 28px;
   width: 32px;
   height: 32px;
 }
@@ -109,14 +111,13 @@ button {
   width: 30%;
   margin-top: -56px;
 }
-div h1 {
+h1 {
   float: right;
   margin-top: -1vh;
   padding-top: 0;
   margin-bottom: 30vh;
-  font-size: 2vh;
   position: absolute;
-  left: 36%;
+  left: 30%;
 }
 hr {
   position: absolute;
